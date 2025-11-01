@@ -17,7 +17,7 @@ const SCREEN_WIDTH = g.getWidth();
 const SCREEN_HEIGHT = g.getHeight();
 const BIG_FONT_SIZE = 38;
 const SMALL_FONT_SIZE = 22;
-
+var drawTimeout=1000;
 var arrowFont = atob("BwA4AcAOAHADgBwA4McfOf3e/+P+D+A+AOA="); // contains only the > character
 
 var now = new Date();
