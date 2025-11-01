@@ -80,19 +80,19 @@ const storage = require("Storage");
                 return '' + (value / 60000) + 'm'
             }
         },
-        'Work pat.': require("buzz_menu").pattern(settings.notifyWorkPattern, value =>{
+        'Notify work': require("buzz_menu").pattern(settings.notifyWorkPattern, value =>{
 settings.notifyWorkPattern = value;
 save();
 require("buzz").pattern(value);
 
         }),
-        'Short brk. pat.': require("buzz_menu").pattern(settings.notifyShortPattern, value =>{
+        'Notify short': require("buzz_menu").pattern(settings.notifyShortPattern, value =>{
 settings.notifyShortPattern = value;
 save();
 require("buzz").pattern(value);
 
         }),
-        'Long brk. pat.': require("buzz_menu").pattern(settings.notifyLongPattern, value =>{
+        'Notify long': require("buzz_menu").pattern(settings.notifyLongPattern, value =>{
 settings.notifyLongPattern = value;
 save();
         }),
